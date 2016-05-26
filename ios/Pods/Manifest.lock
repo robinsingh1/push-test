@@ -1,0 +1,13 @@
+PODS:
+  - Batch (1.5.3)
+  - Intercom (2.3.21)
+
+DEPENDENCIES:
+  - Batch
+  - Intercom
+
+SPEC CHECKSUMS:
+  Batch: e8b878faad90083e572812d725da0e6e536490a7
+  Intercom: c05a2e008be2e5064d9045e0e7b919ca267da303
+
+COCOAPODS: 0.39.0
