@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 
 #import "Intercom/intercom.h"
+@import Batch;
 
 #import "RCTRootView.h"
 
@@ -33,6 +34,11 @@
    * on the same Wi-Fi network.
    */
   [Intercom setApiKey:@"ios_sdk-your-7ad8178251e8bb6a3e33248f23d28c633a383a1c" forAppId:@"rqpxn709"];
+	[Batch startWithAPIKey:@"DEV574651DC04029CF67AA068F4F51"]; // dev
+	// [Batch startWithAPIKey:@"574651DC0256C1457098AAFB616946"]; // live
+
+	// Register for push notifications
+	[BatchPush registerForRemoteNotifications];
 
 
   jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios&dev=true"];
